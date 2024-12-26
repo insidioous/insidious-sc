@@ -5,8 +5,8 @@ We will walk you how to download the tool
  - And click "download zip"
  - After downloading open the .zip
  - And extract the files to a folder on your desktop
- - Now run install.bat After installing the requirements
- - You can then open start.bat and use the tool
+ - Now run install.bat, Now after installing the requirements
+ - You can now open start.bat and use the tool
 
 ## ✨Latest Updates
 
