@@ -74,21 +74,27 @@ def get_system_info():
         print(f"{key}: {value}")
 
 def display_ascii_art():
-    ascii_art = Fore.RED + Style.BRIGHT + r"""
-╔╦╗╔═╗╔═╗╔╦╗╦ ╦╦═╗╔╗ ╔═╗╔╦╗╦╔═╗╔╗╔  ╔╗╔╔═╗╔╦╗╦╔═╗╔╗╔
-║║║╠═╣╚═╗ ║ ║ ║╠╦╝╠╩╗╠═╣ ║ ║║ ║║║║  ║║║╠═╣ ║ ║║ ║║║║
-╩ ╩╩ ╩╚═╝ ╩ ╚═╝╩╚═╚═╝╩ ╩ ╩ ╩╚═╝╝╚╝  ╝╚╝╩ ╩ ╩ ╩╚═╝╝╚╝ 
+    ascii_art = Fore.WHITE + Style.BRIGHT + r"""
+ ▄█  ███▄▄▄▄      ▄████████  ▄█  ████████▄   ▄█   ▄██████▄  ███    █▄     ▄████████ 
+███  ███▀▀▀██▄   ███    ███ ███  ███   ▀███ ███  ███    ███ ███    ███   ███    ███ 
+███▌ ███   ███   ███    █▀  ███▌ ███    ███ ███▌ ███    ███ ███    ███   ███    █▀  
+███▌ ███   ███   ███        ███▌ ███    ███ ███▌ ███    ███ ███    ███   ███        
+███▌ ███   ███ ▀███████████ ███▌ ███    ███ ███▌ ███    ███ ███    ███ ▀███████████ 
+███  ███   ███          ███ ███  ███    ███ ███  ███    ███ ███    ███          ███ 
+███  ███   ███    ▄█    ███ ███  ███   ▄███ ███  ███    ███ ███    ███    ▄█    ███ 
+█▀    ▀█   █▀   ▄████████▀  █▀   ████████▀  █▀    ▀██████▀  ████████▀   ▄████████▀  
+                                                                                    
     """
     print(ascii_art)
 
 def set_cmd_title():
-    subprocess.run("title 765 MN - Serial Checker", shell=True)
+    subprocess.run("title Insidious - Serial Checker", shell=True)
 
 def clear_screen():
     os.system("cls")
 
 def wait_for_enter():
-    print(Fore.RED + "\nPress Enter to return to the menu...")
+    print(Fore.WHITE + "\nPress Enter to return to the menu...")
     while True:
         if msvcrt.kbhit():
             key = msvcrt.getch()
